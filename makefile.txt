@@ -1,0 +1,20 @@
+   
+
+resultado.png: dacalor.dat grafica.py mh.py fou.py
+
+	python grafica.py solu.py fou.py
+
+
+
+%.dat : a.out
+
+	./a.out 
+
+
+
+a.out: solu.cpp
+
+	g++ solu.cpp
+
+
+
